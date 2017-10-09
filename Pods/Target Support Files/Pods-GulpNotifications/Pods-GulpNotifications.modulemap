@@ -1,0 +1,6 @@
+framework module Pods_GulpNotifications {
+  umbrella header "Pods-GulpNotifications-umbrella.h"
+
+  export *
+  module * { export * }
+}

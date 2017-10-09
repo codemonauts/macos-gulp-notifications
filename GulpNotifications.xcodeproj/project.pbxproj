@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D915EF9B0265AE7AB9548F72 /* Pods_GulpNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574179237BB59308EF6B4572 /* Pods_GulpNotifications.framework */; };
 		EBA002FA1F8980630075E56C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA002F91F8980630075E56C /* AppDelegate.swift */; };
 		EBA002FC1F8980630075E56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA002FB1F8980630075E56C /* Assets.xcassets */; };
 		EBA002FF1F8980630075E56C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA002FD1F8980630075E56C /* MainMenu.xib */; };
+		EBA003081F898DBD0075E56C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA003071F898DBD0075E56C /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E5FA26F37CD0A71CFB6B8CB /* Pods-GulpNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GulpNotifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GulpNotifications/Pods-GulpNotifications.debug.xcconfig"; sourceTree = "<group>"; };
+		574179237BB59308EF6B4572 /* Pods_GulpNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GulpNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6316CC400128603849CC36 /* Pods-GulpNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GulpNotifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-GulpNotifications/Pods-GulpNotifications.release.xcconfig"; sourceTree = "<group>"; };
 		EBA002F61F8980630075E56C /* GulpNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GulpNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA002F91F8980630075E56C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA002FB1F8980630075E56C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBA002FE1F8980630075E56C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EBA003001F8980630075E56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBA003011F8980630075E56C /* GulpNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GulpNotifications.entitlements; sourceTree = "<group>"; };
+		EBA003071F898DBD0075E56C /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D915EF9B0265AE7AB9548F72 /* Pods_GulpNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FF1E2FCBE865E5372D0E41F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				574179237BB59308EF6B4572 /* Pods_GulpNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99A89590F739EAB4A544751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FA26F37CD0A71CFB6B8CB /* Pods-GulpNotifications.debug.xcconfig */,
+				DB6316CC400128603849CC36 /* Pods-GulpNotifications.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EBA002ED1F8980630075E56C = {
 			isa = PBXGroup;
 			children = (
 				EBA002F81F8980630075E56C /* GulpNotifications */,
 				EBA002F71F8980630075E56C /* Products */,
+				B99A89590F739EAB4A544751 /* Pods */,
+				0FF1E2FCBE865E5372D0E41F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA002F91F8980630075E56C /* AppDelegate.swift */,
+				EBA003071F898DBD0075E56C /* StatusMenuController.swift */,
 				EBA002FB1F8980630075E56C /* Assets.xcassets */,
 				EBA002FD1F8980630075E56C /* MainMenu.xib */,
 				EBA003001F8980630075E56C /* Info.plist */,
@@ -67,9 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBA003041F8980630075E56C /* Build configuration list for PBXNativeTarget "GulpNotifications" */;
 			buildPhases = (
+				3084170CF52804C03DC07C03 /* [CP] Check Pods Manifest.lock */,
 				EBA002F21F8980630075E56C /* Sources */,
 				EBA002F31F8980630075E56C /* Frameworks */,
 				EBA002F41F8980630075E56C /* Resources */,
+				31E056E3768E6FF5A2D1926C /* [CP] Embed Pods Frameworks */,
+				FF4C699899009881ED9F89E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3084170CF52804C03DC07C03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GulpNotifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31E056E3768E6FF5A2D1926C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GulpNotifications/Pods-GulpNotifications-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GulpNotifications/Pods-GulpNotifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4C699899009881ED9F89E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GulpNotifications/Pods-GulpNotifications-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBA002F21F8980630075E56C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA003081F898DBD0075E56C /* StatusMenuController.swift in Sources */,
 				EBA002FA1F8980630075E56C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +263,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -197,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -235,7 +320,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -248,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,14 +342,15 @@
 		};
 		EBA003051F8980630075E56C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5FA26F37CD0A71CFB6B8CB /* Pods-GulpNotifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GulpNotifications/GulpNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E7527A5V8P;
 				INFOPLIST_FILE = GulpNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codemonauts.GulpNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -273,14 +359,15 @@
 		};
 		EBA003061F8980630075E56C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6316CC400128603849CC36 /* Pods-GulpNotifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GulpNotifications/GulpNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E7527A5V8P;
 				INFOPLIST_FILE = GulpNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codemonauts.GulpNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
