@@ -18,7 +18,7 @@ class StatusMenuController: NSObject {
     }
     
     override func awakeFromNib() {
-        let icon = NSImage(named: NSImage.Name(rawValue: "statusIcon"))
+        let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = statusMenu
